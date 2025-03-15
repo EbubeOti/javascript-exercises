@@ -6,9 +6,11 @@ const removeFromArray = function(anArray, ...num) {
                 if (x != -1 ) {
                     anArray.splice(x,y);
                     
+                } else{
+                    continue
                 }
-                } else {
-                    return "Error";
+            } else {
+                    return "Error: enter an array as the first argument";
             }
     }
 return anArray;
